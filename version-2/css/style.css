@@ -5,13 +5,18 @@ body, html {
     color: rgba(0, 0, 0, 0.7);
 }
 
-header {
+.home {
+    height: 100vh;
+}
+
+.home header {
     height: 80px;
     overflow: hidden;
     display: flex;
+    opacity: 0;
 }
 
-.home-nav-header {
+.home .nav-header {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -21,7 +26,7 @@ header {
     justify-content: space-between;
 }
 
-.home-nav-header img {
+.home .nav-header img {
     width: 25.5px;
     cursor: pointer;
     opacity: 0.7;
@@ -29,11 +34,11 @@ header {
     padding: 5px;
 }
 
-.home-nav-header img:hover {
+.home .nav-header img:hover {
     opacity: 1;
 }
 
-.home-nav-header a {
+.home .nav-header a {
     text-decoration: none;
     font-size: 1em;
     font-weight: 600;
@@ -43,24 +48,24 @@ header {
     transition: 0.05s;
 }
 
-.home-nav-header a:hover {
+.home .nav-header a:hover {
     color: rgba(0, 0, 0, 1);
 }
 
-main {
+.home main {
     background: #f9f9f9f9;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 100px;
 }
 
-main h1 {
+.home main h1 {
     text-align: center;
     color: rgba(0, 0, 0, 0.7);
     grid-column: 1/3;
 }
 
-main div {
+.home main div {
     padding: 10px;
 }
 
@@ -68,7 +73,7 @@ div h3 {
     margin-left: 20px;
 }
 
-main h2 {
+.home main h2 {
     grid-column: 1/3;
     text-align: center;
     font-size: 12px;
@@ -77,7 +82,7 @@ main h2 {
     color: lightgreen;
 }
 
-main p {
+.home main p {
     text-indent: 20px;
     letter-spacing: 0.2px;
     line-height: 30px;
@@ -85,15 +90,17 @@ main p {
     font-weight: 600;
 }
 
-main img {
+.home main img {
     width: 314.5px;
     justify-self: center;
     align-self: center;
 }
 
 footer {
-    height: 13vh;
-    display: grid;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 5px;
 }
 
 footer img {
@@ -103,6 +110,7 @@ footer img {
     grid-row: 2;
     transition: 0.2s;
     justify-self: center;
+    padding: 10px;
 }
 
 footer img:hover {
