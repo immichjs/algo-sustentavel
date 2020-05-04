@@ -133,5 +133,18 @@ footer img:hover {
 
 #information {
     height: 100vh;
-    margin: 20px 0 20px 0;
+    margin: 20px 100px 20px 100px;
+}
+
+#information header {
+    display: flex;
+    justify-content: center;
+}
+
+#information img {
+    width: 50px;
+    transform: rotate(180deg);
+    cursor: pointer;
+    display: flex;
+    justify-self: center;
 }
